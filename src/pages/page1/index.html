@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -11,15 +11,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/lib/normalize.css" />
     <link rel="stylesheet" href="/lib/swiper-5/swiper.min.css" />
+    <link rel="stylesheet" href="/lib/animate.min.css" />
     <link rel="stylesheet" href="./index.css" />
     <title>这是一个测试的h5页面</title>
   </head>
   <body>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-1">Slide 哈哈哈</div>
-        <div class="swiper-slide swiper-slide-2">Slide 222</div>
-        <div class="swiper-slide swiper-slide-3">Slid22e</div>
+        <div class="swiper-slide swiper-slide-1">
+          <div class="ani top-msg" swiper-animate-effect="bounceInDown">顶部飞入动画</div>
+          <div class="content ">Slide 1</div>
+        </div>
+        <div class="swiper-slide swiper-slide-2">Slide 2</div>
+        <div class="swiper-slide swiper-slide-3">Slide 3</div>
       </div>
       <!-- 如果需要分页器 -->
       <!-- <div class="swiper-pagination"></div> -->
@@ -32,6 +36,7 @@
       <!-- <div class="swiper-scrollbar"></div> -->
     </div>
     <script src="/lib/swiper-5/swiper.min.js"></script>
+    <script src="/lib/swiper.animate.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
